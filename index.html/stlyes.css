@@ -1,0 +1,217 @@
+@media screen and(min-width:340px)and( max-width:640px) {
+    * {
+        font-size: 1.2em;
+        overflow: auto;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .grid {
+        flex-direction: column;
+    }
+    .one #excu,
+    .two #bpuds,
+    .three #cards {
+        display: none;
+    }
+}
+
+* {
+    background-color: lightslategray;
+    font-size: 16px;
+    overflow: auto;
+    margin: 0%;
+    cursor: pointer;
+}
+
+h1 {
+    font-family: 'Bungee shade', 'cursive', 'serif';
+    font-size: 3.5em;
+    text-align: center;
+    margin-top: 0em;
+    color: black;
+}
+
+nav {
+    border-bottom: 1px black;
+    width: 95%;
+    margin: 0.2em;
+}
+
+.trail ol {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+    margin: 0.2em;
+}
+
+.trail {
+    display: inline-block;
+    margin: 1em;
+    text-align: center;
+}
+
+.trail ol a {
+    font-size: 1.5em;
+    color: black;
+    font-weight: 1000;
+    text-decoration: underline;
+}
+
+.Aboutme {
+    font-family: 'Style Script', 'cursive', 'serif';
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 1.3em;
+    text-align: center;
+    color: black;
+}
+
+.grid {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 50% 50%;
+    border: 2.7rem solid rgb(32, 13, 1);
+    border-spacing: 1em;
+    border-top-left-radius: 14%;
+    border-top-right-radius: 14%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.top {
+    grid-area: 1/1/2/3;
+    font-family: 'Style Script', 'cursive', 'serif';
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 1000;
+    border: 0.5em solid black;
+    color: black;
+}
+
+.one {
+    grid-area: 2/1/4/2;
+    display: flex;
+    border: 2em groove rgba(54, 24, 3);
+}
+
+.two {
+    grid-area: 4/2/5/3;
+    display: flex;
+    border: 2em groove rgba(54, 24, 3);
+}
+
+.three {
+    display: flex;
+    grid-area: 5/1/6/2;
+    border: 2em groove rgba(54, 24, 3);
+}
+
+.four {
+    grid-area: 2/2/4/3;
+    background-color: antiquewhite;
+    border: 2em groove rgba(54, 24, 3);
+    font-size: 1.5em;
+}
+
+.five {
+    grid-area: 4/1/5/2;
+    display: block;
+    background-color: antiquewhite;
+    border: 2em groove rgba(54, 24, 3);
+    font-size: 1.5em;
+}
+
+.six {
+    grid-area: 5/2/6/3;
+    display: block;
+    background-color: antiquewhite;
+    border: 2em groove rgba(54, 24, 3);
+    font-size: 1.5em;
+}
+
+.four p,
+.five p,
+.six p {
+    font-size: 1.5rem;
+    font-weight: 1000;
+    line-height: 2em;
+    background-color: antiquewhite;
+}
+
+.four a,
+.five a,
+.six a {
+    margin-left: 10%;
+    font-size: 1.6rem;
+    text-align: center;
+    background-color: antiquewhite;
+    color: red;
+    text-decoration: underline;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 12em 2em 8em 8em 5em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2em;
+    width: 98%;
+}
+
+.grid2 p {
+    grid-area: 2/1/3/2;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.copy {
+    grid-area: 5/1/6/2;
+}
+
+.git {
+    grid-area: 4/1/5/3;
+    margin-top: 1.2em;
+}
+
+.git a {
+    font-size: 1.8em;
+    color: rgb(62, 4, 70);
+}
+
+.email {
+    display: flex;
+    grid-area: 3/1/4/2;
+    margin-top: 3em;
+}
+
+h4 {
+    grid-area: 5 /3/6/4;
+    margin-bottom: 0em;
+    color: black
+}
+
+h3 {
+    grid-area: 1/1/2/4;
+    font-size: 1.5em;
+    color: black
+}
+
+a:hover,
+a:active {
+    background-color: yellow;
+    border: 0.2em solid blue;
+    text-align: center;
+    flex-flow: row;
+}
+
+.four:hover,
+.five:hover,
+.six:hover {
+    transform: scale(1);
+    text-transform: full-width;
+    line-height: 0.5em;
+}
