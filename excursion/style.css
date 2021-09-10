@@ -1,0 +1,41 @@
+    /*excursion main stylesheet*/
+    
+    * {
+        background-color: black;
+        overflow: auto;
+    }
+    
+    h1,
+    header {
+        text-align: center;
+        color: white;
+        font-size: 60px;
+    }
+    
+    .video {
+        box-shadow: rgb(241, 20, 241);
+        top: 100px;
+        text-align: center;
+    }
+    
+    .about {
+        color: white;
+        font-size: 30px;
+        font-style: oblique;
+        text-align: center;
+    }
+    
+    .camp {
+        text-align: center;
+        box-shadow: white 3px;
+    }
+    
+    .info {
+        text-align: center;
+    }
+    
+    .link {
+        font-size: 25px;
+        text-align: center;
+        color: blueviolet;
+    }

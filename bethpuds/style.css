@@ -1,0 +1,169 @@
+      @media only screen {}
+      
+      * {
+          background-color: rgba(155, 100, 226, 0.876);
+          border: 10px black;
+          overflow: auto;
+      }
+      
+      header {
+          background-color: rgb(10, 10, 10);
+          display: inline-flexbox;
+          height: 6 rem;
+          width: 100%;
+      }
+      
+      header h1 {
+          display: flex;
+          font-family: 'lobster', 'cursive';
+          font-size: 4rem;
+          justify-content: center;
+          justify-items: center;
+          color: seashell;
+          background-color: rgb(10, 10, 10);
+      }
+      
+      header nav {
+          margin: 20px;
+          background-color: rgb(10, 10, 10);
+      }
+      
+      header nav a {
+          font-size: 2rem;
+          align-content: end;
+          margin-right: 10px;
+          color: rgb(243, 234, 234);
+          background-color: rgb(10, 10, 10);
+      }
+      
+      .About h2 {
+          text-align: center;
+          font-style: italic;
+      }
+      
+      .items {
+          display: grid;
+          height: 105rem;
+          width: 96%;
+          grid-template-columns: 20% 20% 20% 20% 20%;
+          grid-template-rows: 8% 23% 23% 23% 23%;
+          border: 5px solid black;
+      }
+      
+      .items h1 {
+          color: black;
+          grid-area: 1/1/2/6;
+          display: inline-flex;
+          text-align: center;
+          flex: stretch;
+          justify-content: center;
+          font-size: 3.2rem;
+          font-weight: bolder;
+          font-family: 'lobster', 'cursive', 'serif';
+      }
+      
+      .item1 {
+          grid-area: 2/ 4/3 /6;
+          width: 100%;
+          border: 1px solid black;
+      }
+      
+      .item1 img {
+          width: 100%;
+          height: 99%;
+          object-fit: cover;
+      }
+      
+      .item2 {
+          color: black;
+          font-style: italic;
+          font-size: 2rem;
+          grid-area: 2/ 1/ 3/4;
+          line-height: 5rem;
+          box-sizing: border-box;
+          border-style: inset;
+          border-width: 0.5em;
+          border-spacing: 1.5em;
+          border-image: repeating-linear-gradient(40deg, #141414, #2d0652, #ab69e9 10px) 20;
+      }
+      
+      .item3 {
+          grid-area: 3/1 /3/3;
+          width: 100%;
+      }
+      
+      .item3 img {
+          width: 100%;
+          height: 99%;
+          object-fit: cover;
+      }
+      
+      .item4 {
+          font-style: italic;
+          font-size: 2rem;
+          grid-area: 3 /3 /4/6;
+          border-style: groove;
+          border-top: 5px black;
+          line-height: 4rem;
+          box-sizing: border-box;
+          border-style: inset;
+          border-width: 0.5em;
+          border-spacing: 1.3em;
+          border-image: repeating-linear-gradient(42deg, #141414, #2d0652, #ab69e9 10px) 20;
+      }
+      
+      .item5 {
+          grid-area: 4/4 /5/6;
+          width: 100%;
+      }
+      
+      .item5 img {
+          width: 100%;
+          height: 99%;
+          object-fit: cover;
+      }
+      
+      .item6 {
+          font-style: italic;
+          font-size: 2rem;
+          grid-area: 4/1 /5/4;
+          border-style: groove;
+          border-top: 5px black;
+          line-height: 4rem;
+          box-sizing: border-box;
+          border-style: inset;
+          border-width: 0.5em;
+          border-spacing: 1px;
+          border-image: repeating-linear-gradient(40deg, #141414, #2d0652, #ab69e9 10px) 20;
+      }
+      
+      .item7 {
+          grid-area: 5/1/6/3;
+          width: 100%;
+      }
+      
+      .item7 img {
+          width: 99%;
+          height: 99%;
+          object-fit: cover;
+      }
+      
+      .item8 {
+          font-style: italic;
+          text-align: center;
+          font-size: 2.1em;
+          grid-area: 5/3/6/6;
+          border-style: groove;
+          border-top: 5px black;
+          line-height: 4rem;
+          box-sizing: border-box;
+          border-style: inset;
+          border-width: 0.5em;
+          border-spacing: 1.5em;
+          border-image: repeating-linear-gradient(40deg, #141414, #2d0652, #ab69e9 10px) 20;
+      }
+      
+      footer h4 {
+          margin-left: auto;
+          text-align: right;
+      }
