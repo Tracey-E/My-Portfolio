@@ -24,8 +24,8 @@ class deck {
         return cards
     }
 }
-myDeck = new deck;
-console.log(myDeck);
+const myDeck = new deck;
+
 
 //to shuffle the deck so not all in order
 function shuffle(o) {
@@ -33,4 +33,52 @@ function shuffle(o) {
     for (var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
     return o;
 }
-myDeck = shuffle(myDeck);
+const myPlayingDeck = shuffle(myDeck);
+
+//need to split pack into 2 hands
+//difficulty easy/med/hardset computer time for using snap?
+//player who has all cards wins
+
+// difficulty level
+
+function difficulty() {
+
+}
+//spliting deck into 2 hands
+
+
+function split(e) {
+
+    const user1Hand = []
+    const compHand = []
+
+    const split1 = myPlayingDeck.slice(0, 27);
+    const split2 = myPlayingDeck.slice(27, 53);
+
+    user1Hand.push(split1);
+    compHand.push(split2);
+
+
+    return split
+}
+
+//turn 1 card over at a time for player hand and comp hand show card on playing board
+
+function deal() {
+
+}
+
+
+//button click to call snap if true snap cards go to player/comps hand
+
+function snapCall() {
+
+}
+
+//check if each player still has cards in hand if 1 has no cards declare winner
+
+function cardCount() {
+
+}
+
+split()

@@ -1,22 +1,24 @@
-    @media only screen and (min-width:320px)and( max-width:640px) {
-        * {
-            background-color: rgb(4, 58, 4);
-            font-size: 1em;
-        }
-    }
-    
+@media only screen and (min-width:320px)and( max-width:640px) {
     * {
         background-color: rgb(4, 58, 4);
-        font-size: 16px;
-        overflow: auto;
-        width: 100%;
+        font-size: 1em;
     }
-    
-    h1 {
-        font-size: 2em;
-        text-align: center;
-    }
-    /*  nav {
+}
+
+* {
+    background-color: rgb(4, 58, 4);
+    font-size: 16px;
+    overflow: auto;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+
+/*  nav {
         background-color: rgb(10, 10, 10);
         justify-content: center;
         align-items: center;
@@ -24,111 +26,135 @@
     }
     
     */
-    
-    nav ol {
-        border: 0.3em solid black;
-        display: flex;
-        flex-direction: row;
-        width: 95%;
-        height: 7em;
-        background-color: rgba(4, 59, 4);
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    
-    nav li {
-        display: inline-flex;
-        font-size: 1.8em;
-        margin: auto;
-    }
-    
-    h2 {
-        background-color: rgb(237, 250, 237);
-        margin-top: 1em;
-        font-size: 1.8em;
-        text-align: center;
-    }
-    
-    .pontoon {
-        margin-top: 3em;
-        display: grid;
-        grid-template-columns: 15% 15% 15% 15%;
-        grid-template-rows: 15em 5em 5em;
-        width: 100%;
-        text-align: center;
-        column-gap: 2em;
-        row-gap: 2em;
-        margin-right: auto;
-        justify-content: center;
-        padding-bottom: 2.5em;
-    }
-    
-    .play {
-        font-size: 2.3em;
-        text-align: center;
-        border: 0.2em ridge #afd9ee;
-    }
-    
-    .stick {
-        font-size: 2.3em;
-        text-align: center;
-        border: 0.2em ridge #afd9ee;
-    }
-    
-    .twist {
-        font-size: 2.3em;
-        text-align: center;
-        border: 0.2em ridge #afd9ee;
-    }
-    
-    .game {
-        font-size: 2.3em;
-        text-align: center;
-        border: 0.2em ridge #afd9ee;
-    }
-    
-    .card {
-        background-color: antiquewhite;
-        width: 5.2em;
-        height: 6.5em;
-        border: 2px solid #151718;
-        float: left;
-        border-radius: 2px;
-        font-family: courier;
-        font-size: 2em;
-        text-align: center;
-    }
-    
-    .number {
-        font-size: 2em;
-        color: black;
-        background-color: antiquewhite;
-    }
-    
-    .suit {
-        height: 2em;
-        color: red;
-        font-size: 2em;
-        background-color: antiquewhite;
-    }
-    
-    .suit#clubs {
-        color: rgb(10, 2, 2);
-        font-size: 2em;
-        background-color: antiquewhite;
-    }
-    
-    p {
-        grid-area: 1/1/2/5;
-        display: inline;
-        font-size: 1.5em;
-    }
-    
-    .ace {
-        background-color: rgb(29, 122, 83);
-        grid-area: 3/1/4/5;
-        justify-content: center;
-        font-size: 2em;
-    }
-    /*h n d= \2665,\2666 cns =\2663,\2660*/
+
+nav ol {
+    border: 0.3em solid black;
+    display: flex;
+    flex-direction: row;
+    height: 7em;
+    width: 90%;
+    background-color: rgba(4, 59, 4);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+nav li {
+    display: inline-flex;
+    font-size: 2em;
+    margin: auto;
+}
+
+h2 {
+    background-color: rgb(237, 250, 237);
+    margin-top: 1em;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.pontoon {
+    margin-top: 1.5em;
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15%;
+    grid-template-rows: 20em 5em 5em card;
+    width: 95%;
+    text-align: center;
+    column-gap: 2em;
+    row-gap: 2em;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2.5em;
+}
+
+.play {
+    font-size: 2.3em;
+    text-align: center;
+    border: 0.2em ridge #afd9ee;
+}
+
+.play:name {
+    visibility: hidden
+}
+
+.stick {
+    font-size: 2.3em;
+    text-align: center;
+    border: 0.2em ridge #afd9ee;
+}
+
+.twist {
+    font-size: 2.3em;
+    text-align: center;
+    border: 0.2em ridge #afd9ee;
+}
+
+.game {
+    font-size: 2.3em;
+    text-align: center;
+    border: 0.2em ridge #afd9ee;
+}
+
+.ace:hover,
+.play:hover,
+.stick:hover,
+.twist:hover,
+.game:hover,
+.twist:active,
+.stick:active,
+.game:active {
+    background-color: rgb(236, 236, 213);
+    border: 0.2em solid rgb(183, 226, 26);
+    text-align: center;
+    flex-flow: row;
+}
+
+.card {
+    grid-area: card;
+    background-color: antiquewhite;
+    height: 6.5em;
+    width: 5em;
+    border: 2px solid #151718;
+    float: left;
+    border-radius: 3px;
+    font-family: courier;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 3em;
+    margin-top: 0em;
+}
+
+.number {
+    font-size: 2em;
+    color: black;
+    background-color: antiquewhite;
+}
+
+.suit {
+    height: 2em;
+    color: red;
+    font-size: 2em;
+    background-color: antiquewhite;
+}
+
+.suit#clubs {
+    color: rgb(10, 2, 2);
+    font-size: 2em;
+    background-color: antiquewhite;
+}
+
+p {
+    grid-area: 1/1/2/5;
+    display: inline;
+    font-size: 1.5em;
+}
+
+.ace {
+    background-color: rgb(29, 122, 83);
+    grid-area: 3/1/4/5;
+    justify-content: center;
+    font-size: 2em;
+}
+
+
+/*h n d= \2665,\2666 cns =\2663,\2660*/

@@ -2,9 +2,10 @@
 //credit for these parts goes to Dev Dojo all other parts are my own creation
 
 
-const butt = document.getElementById('ace', 'play', 'stick', 'twist', 'game', )
-
+const butt = document.getElementById('ace', 'stick', 'twist', 'game', )
+const button = document.getElementById('play')
 butt.addEventListener("click", function(e) { return false; }, false);
+button.addEventListener("click", function(e) { return false; }, false);
 const cards = [];
 //(*)
 function card(name, value, suit) {
@@ -34,7 +35,7 @@ function deck() {
 //comp opponent
 
 
-//outer scope vars to use throught program
+//outer scope vars to use throughout program
 
 var myPack = new deck();
 
@@ -52,7 +53,7 @@ function design(x) {
     for (var i = 0; i < x.length; i++) {
         div = document.createElement('div');
         div.className = 'card';
-        div.Id = x[i].suit;
+        div.Id = 'card'
         if (x[i].suit == 'Diamonds') {
             var ascii_char = '&diams;';
         } else {
@@ -90,12 +91,15 @@ myPack = shuff(myPack);
 function start(e) {
 
     user1StartHand = myPack.slice(0, 2)
-
+    if (button.innerText === 'Play') {
+        button.innerText = 'scroll down to view your cards'
+    }
     return design(user1StartHand);
+
 }
 
 //add cards total method
-//swapj,q,k, for 10 ech
+//swap j,q,k, for 10 ech
 // then add cards in hand to get total
 let sum = 0; //used for total of stat 2 cards
 
