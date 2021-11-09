@@ -3,11 +3,12 @@
 
 
 <head>
+
     <meta charset="utf-8">
     <title>Solo Cards</title>
     <link rel="stylesheet" type="text/css" href="./cards.css">
-    <script type="text/javascript" src="pontoon.js" defer></script>
-
+    <script type="text/javascript" src="cards.js" defer></script>
+      
 </head>
 
 <body>
@@ -15,16 +16,18 @@
         <h1>welcome to your playing table</h1>
         <nav>
             <ol>
-                <li>Pontoon</li>
-                <li>Clock</li>
-                <li>Snap</li>
-                <li>Solataire</li>
+                <li><a href ="#pontoon">Pontoon</a></li>
+                <li><a href ="#clock">Clock</a></li>
+                <li><a href ="#snap">Snap</a></li>
+                <li><a href = "#solataire">Solataire</a></li>
             </ol>
         </nav>
     </header>
     <main>
-        <h2>PONTOON </h2>
-        <div class="pontoon" id="pontoon">
+
+        <container class="pontoon" id="pontoon" title="#pontoon">
+            <h2>PONTOON </h2>
+
 
             <p>The goal of Pontoon is to get the cards to add up to 21 without going over 21. The person/computer with highest score wins<br>Play=start game. Twist= deal 1 more card. Stick = see who has the highest card values. New game = clear the board
                 and start again.<br>J,Q,K all = 10.<br>Aces can either = 1 or 11<br>Click play to begin</p>
@@ -38,7 +41,34 @@
                 </button>
             <button class="ace" id="ace" type="button" onclick="aceValue()">click here to choose value of Ace
             </button>
-        </div>
+
+            <div class="gridItem" id="gridItem"></div>
+
+
+        </container>
+
+        <section>
+            <div class="snap" id="snap">
+                <h2>SNAP</h2>
+                <p>The goal of Snap is to collect all the 52 cards into your hand by clicking the SNAP button when the numbers or letters on the cards match if a player runs out of cards first the other player wins.<br/>make sure the snap button is visible on your screen<br/>Are you faster than a computer?.<br/></p>
+
+            <button class="playGame" id="playGame" type=" button " onclick="playGame()">Click to  start your game
+                </button>
+            <button class="nextCard " id="nextCard" type="button " onclick=" nextCard() "> Next Card
+                </button>
+            <button class="snaps " id="snaps" type="button " onclick=" snaps() "> SNAP BUTTON
+                </button>
+            <button class="newgame " id="game" type="button " onclick=" newGame() "> New game
+                </button>
+            <button class="difficulty " id="difficulty" type="button " onclick=" level()">Click here to choose your difficulty level
+                </button>
+                <h5 class ="usercards">your cards</h5>
+                <h5 class =" cCard">computer cards</h5>
+                <div class ="userPlayerCards"></div>
+                <div class ="compPlayerCards"></div>
+            </div>
+        </section>
+        </section>
     </main>
     <footer>
 
