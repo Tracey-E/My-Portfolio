@@ -1,1 +1,0 @@
-This is my portfolIo project that I am creating to showcase what I am learning, It contains a few of the set projects I have completed, also my personal project that I have started from scratch to put the knowledge of my learning into practice. I will be adding more games onto the card table so far pontoon and snap are done .
